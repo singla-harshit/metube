@@ -60,8 +60,23 @@ hideButtons();
 function playVideo(videoId) {
   const videoUrl = `https://www.youtube.com/embed/${videoId}`;
   document.getElementById('videoPlayer').src = videoUrl;
+  updateVideoTitle(videoId); // Update the video title
   updateDescription(videoId);
   showButtons(); // Show buttons when video is selected
+}
+
+function updateVideoTitle(selectedVideoId) {
+  // Make API request to get video details
+  fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${selectedVideoId}&key=${API_KEY}`)
+    .then(response => response.json())
+    .then(data => {
+      const title = data.items[0].snippet.title;
+      document.getElementById('videoTitle').textContent = title; // Set the video title
+    })
+    .catch(error => {
+      console.error('Error fetching video details:', error);
+      alert('An error occurred while fetching video details.');
+    });
 }
 
 function showButtons() {
@@ -78,6 +93,9 @@ function updateDescription(selectedVideoId) {
         .then(data => {
             const description = data.items[0].snippet.description;
             const descriptionContainer = document.getElementById('descriptionContainer');
+
+            
+          
             if (description) {
                 descriptionContainer.innerHTML = `<h3>Description Box:</h3><p>${description}</p>`;
                 descriptionContainer.style.display = 'block'; // Display description container
