@@ -1,4 +1,3 @@
-// Replace 'YOUR_API_KEY' with your actual YouTube API key
 const API_KEY = 'AIzaSyCQqvQhNs-lX7KoUCErol_05C5pM15YCRQ';
 const SEARCH_ENDPOINT = 'https://www.googleapis.com/youtube/v3/search';
 
