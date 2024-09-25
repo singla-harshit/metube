@@ -3,15 +3,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
-  /* Light background color */
   color: #333;
-  /* Default text color */
+
 }
 
 .heading {
   text-align: center;
   color: #ff0000;
-  /* Heading color */
+
   margin-top: 20px;
 }
 
@@ -26,7 +25,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  /* Input border color */
+
   margin-right: 1px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -37,22 +36,20 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #ff0000;
-  /* Button background color */
   color: white;
-  /* Button text color */
   cursor: pointer;
 }
 
 .video-container {
-  margin: 0 auto; /* Center the video container horizontally */
-  max-width: 600px; /* Set a maximum width for the video container */
-  padding: 0 10px; /* Add padding on the left and right sides */
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 10px; 
 }
 
 #videoWrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
 }
 
 #videoPlayer {
@@ -81,9 +78,9 @@ body {
   padding: 10px;
   border-radius: 5px;
   background-color: #fff;
-  /* Result item background color */
+
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  /* Result item shadow */
+
   cursor: pointer;
 }
 
@@ -107,10 +104,10 @@ body {
 #descriptionContainer {
   display: none;
   background-color: #fff;
-  /* Description box background color */
+
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  /* Description box shadow */
+
   overflow-wrap: break-word;
 }
 
@@ -120,8 +117,7 @@ body {
   color: red;
   
   background-color: transparent;
-  /* Button background color */
-  /* Button text color */
+ 
   border: none;
   border-radius: 5px;
   padding: 5px 20px;
@@ -137,10 +133,10 @@ body {
   max-width: 800px; 
   padding: 10px;
   background-color: #fff;
-  /* Description box background color */
+
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  /* Description box shadow */
+
   overflow-wrap: break-word;
 }
 
@@ -148,8 +144,8 @@ body {
 #toggleCommentButton {
     display: block;
     margin: 20px auto;
-    background-color: transparent; /* Button background color */
-    color: red; /* Button text color */
+    background-color: transparent;
+    color: red; 
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
@@ -167,8 +163,8 @@ body {
   padding: 0;
   cursor: pointer;
   transition: filter 0.3s;
-  border-radius: 50%; /* Make it a circle */
-  width: 40px; /* Set width and height to create a circle */
+  border-radius: 50%; 
+  width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -184,41 +180,39 @@ body {
 }
 
 .cdButtons button {
-  margin-right: 10px; /* Adjust as needed */
+  margin-right: 10px; 
 }
 
 
 .dark-mode {
   background-color: #222;
-  /* Dark background color */
+
   color: #fff;
-  /* Light text color */
+
 }
 
 .dark-mode .heading {
   color: #ff0000;
-  /* Dark mode heading color */
+
 }
 
 .dark-mode .search-container input[type="text"] {
   background-color: #444;
-  /* Dark mode input background color */
+
   color: white;
-  /* Dark mode input text color */
+
   border-color: #666;
-  /* Dark mode input border color */
+
 }
 
 .dark-mode .search-container button {
-  background-color: #ff0000;
-  /* Dark mode button background color */
-}
+  background-color: #ff0000;}
 
 .dark-mode .result-item {
   background-color: #444;
-  /* Dark mode result item background color */
+
   box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
-  /* Dark mode result item shadow */
+
 }
 
 
