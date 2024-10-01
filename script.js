@@ -4,6 +4,15 @@ const SEARCH_ENDPOINT = 'https://www.googleapis.com/youtube/v3/search';
 let isDescriptionVisible = true;
 let isCommentVisible = false;
 
+const inputField = document.querySelector('#searchInput')
+inputField.addEventListener('keydown',search)
+
+function search(event){
+  if(event.key === "Enter"){
+    document.getElementById("searchButton").click();
+  }
+}
+
 function searchVideos() {
   const searchInput = document.getElementById('searchInput').value;
 
